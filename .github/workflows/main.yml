@@ -2,8 +2,8 @@ name: Scrape
 
 on:
   schedule:
-    - cron: "0 8 * * *" # 8 a.m. every day UTC // minute, hour, day, month, year -- use a cron time tool crontab guru, star means "at every" github runs only 5 min
-    workflow_dispatch:
+    - cron: "0 8 * * *"
+  workflow_dispatch:
 
 jobs: #can change scrape with anything. Just variable name
   scrape:
