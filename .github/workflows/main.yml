@@ -2,11 +2,11 @@ name: Scrape
 
 on:
   schedule:
-    - cron: "0 8 * * *"
+    - cron: "0 8 * * *" #minute, hour, day, month, year. CronGuru tool, asterisk means "every"
   workflow_dispatch:
 
 jobs: #can change scrape with anything. Just variable name
-  scrape:
+  scrape: #git push -f origin main;
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2 #checkout the repository on a virtual machine that runs ubuntu
@@ -19,3 +19,11 @@ jobs: #can change scrape with anything. Just variable name
     - run: pipenv install jupyter requests bs4 --python `which python`
     - name: Run scraper
       run: pipenv run jupyter execute scrape.ipynb
+    - name: Add and commit
+      run: |-
+        git add .
+        git config user.name "Automated"
+        git config user.email "actions@users.noreply.github.com"
+        git commit -m "Latest data"
+    - name: Push
+      run: git push
