@@ -18,11 +18,11 @@
     "default": {
         "anyio": {
             "hashes": [
-                "sha256:1d9fe889df5212298c0c0723fa20479d1b94883a2df44bd3897aa91083316f7a",
-                "sha256:b5011f270ab5eb0abf13385f851315585cc37ef330dd88e27ec3d34d651fd47a"
+                "sha256:673c0c244e15788651a4ff38710fea9675823028a6f08a5eda409e0c9840a028",
+                "sha256:9f76d541cad6e36af7beb62e978876f3b41e3e04f2c1fbf0884604c0a9c4d93c"
             ],
             "markers": "python_version >= '3.9'",
-            "version": "==4.8.0"
+            "version": "==4.9.0"
         },
         "argon2-cffi": {
             "hashes": [
@@ -77,11 +77,11 @@
         },
         "async-lru": {
             "hashes": [
-                "sha256:b8a59a5df60805ff63220b2a0c5b5393da5521b113cd5465a44eb037d81a5627",
-                "sha256:ff02944ce3c288c5be660c42dbcca0742b32c3b279d6dceda655190240b99224"
+                "sha256:481d52ccdd27275f42c43a928b4a50c3bfb2d67af4e78b170e3e0bb39c66e5bb",
+                "sha256:ab95404d8d2605310d345932697371a5f40def0487c03d6d0ad9138de52c9943"
             ],
-            "markers": "python_version >= '3.8'",
-            "version": "==2.0.4"
+            "markers": "python_version >= '3.9'",
+            "version": "==2.0.5"
         },
         "attrs": {
             "hashes": [
